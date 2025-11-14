@@ -1,0 +1,56 @@
+
+<ul>
+    <li id="back">
+        api
+        <ul id="list-back">
+            <li>
+                config
+            </li>
+            <li>
+                service
+            </li>
+            <li>
+                contruller
+            </li>
+            <li>
+                model
+            </li>
+            <li>
+                dtos
+            </li>
+            <li>
+                security
+            </li>
+        </ul>
+    </li>
+
+    <li id="front" style="margin-top: 20px;">
+        frontend
+        <ul id="list-front">
+            <li>
+                public
+            </li>
+            <li>
+                assets
+            </li>
+            <li>
+                src
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    const backend = document.getElementById('back');
+    const values_backend = document.getElementById('list-back');
+    const frontend = document.getElementById('front');
+    const values_frontend = document.getElementById('list-front');
+
+    backend.onclick = () => {
+        values_backend.style.display = values_backend.style.display == 'none' ? 'block' : 'none'
+    }
+
+    frontend.onclick = () => {
+        values_frontend.style.display = values_frontend.style.display == 'none' ? 'block' : 'none'
+    }
+</script>
