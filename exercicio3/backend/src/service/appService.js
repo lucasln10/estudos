@@ -2,7 +2,7 @@ const db = require('../../db/conection/db');
 
 const createUser = async (id, nome, email, senha, idade) => {
     try {
-        const query = 'INSERT INTO user (name, email, password, idade) VALUES (?, ?, ?, ?)';
+        const query = 'INSERT INTO user (id, name, email, password, idade) VALUES (?, ?, ?, ?, ?)';
         const [result] = await db.query(query, [id, nome, email, senha, idade]);
         return result.insertId;
     } catch (err) {
