@@ -1,7 +1,7 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Content from "./components/Content";
-import Nav from "./components/Nav";
+import Header from "./components/tela-inicio/Header";
+import Footer from "./components/tela-inicio/Footer";
+import Content from "./components/tela-inicio/Content";
+import Nav from "./components/tela-inicio/Nav";
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
